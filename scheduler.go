@@ -37,7 +37,7 @@ func (s *Scheduler) Process(ip Meta) (data []Meta) {
 	return
 }
 
-// batchProcess will process only if given key hash if full
+// batchProcess will process only if given key hash is full
 // i.e. all seq are available in that hash map
 func (s *Scheduler) batchProcess(k int) (data []Meta) {
 	if s.hash[k].c == s.batchSize {

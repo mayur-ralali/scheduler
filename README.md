@@ -10,7 +10,7 @@ make test
 ### Algo:
 I have maintainted an array of each batch and as once all the sequece of a batch is received, It will return the current batch.  
 
-You need to implement the Meta interface with you struct.
+You need to implement the Meta interface with your struct.
 
 ### Example
 
@@ -35,5 +35,10 @@ func main() {
             fmt.Println(data)
         }
     }
+}
+
+func getInput() (input []Sample) {
+    //TODO create your sample input
+    return
 }
 ```
