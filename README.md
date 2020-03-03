@@ -1,8 +1,10 @@
 # scheduler
 batch process scheduler
 
+### Install
+go get github.com/mayur-ralali/scheduler
 
-### TO test
+### To test
 make test
 
 ### Algo:
