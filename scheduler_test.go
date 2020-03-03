@@ -32,8 +32,7 @@ func TestSimpleData(t *testing.T) {
 	for _, ip := range input {
 		if data := s.Process(ip); data != nil {
 			assert.Equal(len(data), batch, "Invalid batch size")
-			seq := getSeq(data)
-			assert.True(isSorted(data), fmt.Sprintf("data should be sorted %v", seq))
+			assert.True(isSorted(data), fmt.Sprintf("data should be sorted %v", getSeq(data)))
 			fmt.Println(seq)
 		}
 	}
